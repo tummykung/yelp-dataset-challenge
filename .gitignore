@@ -1,0 +1,7 @@
+*~
+.tmp_credentials
+*.pyc
+backup
+build
+*.pbxuser
+*.mode1v3
