@@ -16,7 +16,7 @@ def make_hash_map(list_of_things, output_filename = ""):
   output = {}
 
   for i in range(len(list_of_things)):
-    output[list_of_things[i]] = i
+    output[list_of_things[i]] = i + 1 # we use this because graphChi does not like 0
 
   if (output_filename != ""):
     with open(output_filename, 'w+') as filename:
@@ -114,7 +114,28 @@ def make_train_and_validation():
     f.write(newline)
   f.close()
   
+def add_header(filename):
+  # not done yet
 
+  f = open(filename, 'rw+')
+  data = []
+
+  with open(filename) as f:
+    for line in f.readlines():
+      line = line.replace('true','True').replace('false','False').strip()
+      try:
+        data.append(eval(line))
+      except:
+        print 'Error occured with line\n%s'%line
+  return data
+
+  f.write("%%MatrixMarket matrix coordinate real general\n% Generated 23-April-2013\n")
+  for edge in validation:
+    newline = '46000 12000 %d\n' %num
+    f.write(newline)
+  f.close()
+
+  
 if __name__ == '__main__':
   try:
     filename = sys.argv[1]
@@ -123,6 +144,8 @@ if __name__ == '__main__':
 
   
   #dicts = make_dicts(filename)
+  #make_user_hashes()
+  #make_business_hashes()
   #make_graph()
   #make_user_hash_from_review()
-  make_train_and_validation()
+  #make_train_and_validation()
