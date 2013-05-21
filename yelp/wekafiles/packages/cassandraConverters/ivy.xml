@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+    <info organisation="${ivy.artifact.group}" module="${ivy.artifact.id}" revision="${project.revision}" />
+    
+    <configurations>
+        <conf name="default"/>
+        <conf name="test" visibility="private"/>
+        <conf name="source" />          
+    </configurations>
+    
+    <publications>
+            <artifact name="${ivy.artifact.id}" type="jar" conf="default"/>
+            <artifact name="${ivy.artifact.id}" m:classifier="sources" type="source" ext="jar" conf="source"/>
+    </publications>   
+    
+    <dependencies defaultconf="default->default">
+        <!-- this is an example dependency.  Add the dependencies for your project here -->
+
+    <dependency org="libthrift" name="libthrift" rev="${dependency.libthrift.revision}" transitive="false" conf="default->default"
+      changing="false"/>
+    <dependency org="apache-cassandra" name="apache-cassandra" rev="${dependency.apache-cassandra.revision}" transitive="false" conf="default->default" changing="false"/>
+    <dependency org="apache-cassandra-thrift" name="apache-cassandra-thrift" rev="${dependency.apache-cassandra-thrift.revision}" transitive="false" conf="default->default"  changing="false"/>
+    <dependency org="com.google.guava" name="guava" rev="${dependency.guava.revision}" transitive="false" conf="default->default"  changing="false"/>
+    <dependency org="commons-lang" name="commons-lang" rev="${dependency.commons-lang.revision}" transitive="false" conf="default->default"  changing="false"/>
+<dependency org="commons-codec" name="commons-codec" rev="${dependency.commons-codec.revision}" transitive="false" conf="default->default" changing="true" />
+<dependency org="log4j" name="log4j" rev="${dependency.log4j.revision}" transitive="false" conf="default->default" changing="true" />
+
+    <dependency org="pentaho.weka" name="pdm-3.7-ce" rev="${dependency.weka.revision}" transitive="false" conf="default->default" changing="true" />
+
+<!--        <dependency org="commons-logging" name="commons-logging" rev="1.1" transitive="false"/> -->
+    </dependencies>
+</ivy-module>

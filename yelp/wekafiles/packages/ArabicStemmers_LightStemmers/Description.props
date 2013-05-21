@@ -1,0 +1,46 @@
+# Description file for ArabicStemmers_LightStemmers
+#
+# 
+
+# Package name (required)
+PackageName=ArabicStemmers_LightStemmers
+
+# Version (required)
+Version=1.0.0
+
+#Date
+Date=2010-10-8
+
+# Title (required)
+Title=Arabic Stemmer / Light Stemmer 
+
+Category=Preprocessing
+
+# Author (required)
+Author=Motaz K. Saad <motaz.saad@gmail.com>
+
+# Maintainer (required)
+Maintainer=Motaz K. Saad <motaz.saad@gmail.com>
+
+# License (required)
+License=GPL 2.0
+
+# Description (required)
+Description=Performs Stemming / Light Stemming for Arabic words using the Stemming / Light Stemming algorithms
+
+# Package URL for obtaining the package archive (required)
+PackageURL=http://prdownloads.sourceforge.net/ar-text-mining/ArabicStemmers_LightStemmers_1.0.zip?download
+
+# URL for further information
+URL=
+
+# Related to other packages?
+Related=
+
+# Dependencies
+Depends=weka (>=3.7.1)
+
+# Special instructions to be displayed on installation of this package
+MessageToDisplayOnInstallation=This package requires to run Weka with (-Dfile.encoding=utf-8) option\n\
+ or change the line (fileEncoding=Cp1252) to (fileEncoding=utf-8) in weka.ini file \n\
+ files also should be in utf-8 format.

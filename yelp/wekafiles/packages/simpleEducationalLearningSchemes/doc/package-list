@@ -1,0 +1,4 @@
+weka.classifiers.bayes
+weka.classifiers.lazy
+weka.classifiers.rules
+weka.classifiers.trees

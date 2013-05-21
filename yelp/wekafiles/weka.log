@@ -1,0 +1,103 @@
+2013-05-10 11:32:00 weka.gui.GUIChooser main
+INFO: Logging started
+---Registering Weka Editors---
+Trying to add database driver (JDBC): RmiJdbc.RJDriver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): jdbc.idbDriver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): org.gjt.mm.mysql.Driver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): com.mckoi.JDBCDriver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): org.hsqldb.jdbcDriver - Warning, not in CLASSPATH?
+[Weka] associationRulesVisualizer can't be loaded because com.sun.j3d.utils.universe.SimpleUniverse can't be instantiated.
+[Weka] associationRulesViewer can't be loaded because Java3D does not seem to be installed. Download and install Java3D from https://java3d.dev.java.net/binary-builds.html before restarting Weka.
+Registering weka.associations.CARuleMiner weka.gui.GenericObjectEditor
+Registering weka.classifiers.meta.ensembleSelection.EnsembleSelectionLibrary weka.gui.EnsembleSelectionLibraryEditor
+[Weka] massiveOnlineAnalysis can't be loaded because C:\Users\balint\wekafiles\packages\massiveOnlineAnalysis\lib\moa.jar appears to be missing.
+[Weka] massiveOnlineAnalysis can't be loaded because the moa.jar file seems to be missing. Download MOA from http://moa.cs.waikato.ac.nz/ and copy the moa.jar file to C:\Users\balint\wekafiles/packages/massiveOnlineAnalysis/lib
+Registering weka.classifiers.meta.generators.NominalAttributeGenerator weka.gui.GenericObjectEditor
+Registering weka.classifiers.meta.generators.NumericAttributeGenerator weka.gui.GenericObjectEditor
+[Weka] RPlugin can't be loaded because the environment variable R_HOME is not set.
+[Weka] RPlugin can't be loaded because the environment variable R_HOME is not set
+Registering weka.attributeSelection.ssf.distanceFunctions.DistanceFunctionForSSF weka.gui.GenericObjectEditor
+Registering weka.attributeSelection.ssf.validationCriteria.ValidationCriteria weka.gui.GenericObjectEditor
+Refreshing GOE props...
+3D [dev] 1.6.0-pre7-daily-experimental daily
+
+[KnowledgeFlow] Loading properties and plugins...
+[KnowledgeFlow] registering chart rendering plugin: weka.gui.beans.JFreeChartOffscreenChartRenderer
+[KnowledgeFlow] Initializing KF...
+Checking for new packages...
+2013-05-10 11:34:34 weka.gui.explorer.Explorer <init>
+INFO: Weka Explorer
+2013-05-10 11:34:34 weka.gui.explorer.Explorer <init>
+INFO: (c) 1999-2013 The University of Waikato, Hamilton, New Zealand
+2013-05-10 11:34:34 weka.gui.explorer.Explorer <init>
+INFO: web: http://www.cs.waikato.ac.nz/~ml/weka/
+2013-05-10 11:34:34 weka.gui.explorer.Explorer <init>
+INFO: Started on péntek, 10 május 2013
+2013-05-10 11:34:52 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now vote (435 instances)
+Selected <Use an artificial time index>
+tpp.TPPException: Insufficient numeric attributes
+	tpp.TPPModel.extractNumericData(TPPModel.java:218)
+	tpp.TPPModel.initialise(TPPModel.java:157)
+	tpp.ScatterPlotModel.initialise(ScatterPlotModel.java:32)
+	tpp.ScatterPlotModel.setInstances(ScatterPlotModel.java:28)
+	tpp.TPPPanel.setInstances(TPPPanel.java:86)
+	tpp.TPPExplorerPanel.setInstances(TPPExplorerPanel.java:42)
+	weka.gui.explorer.Explorer$1.propertyChange(Explorer.java:258)
+	java.beans.PropertyChangeSupport.fire(Unknown Source)
+	java.beans.PropertyChangeSupport.firePropertyChange(Unknown Source)
+	java.beans.PropertyChangeSupport.firePropertyChange(Unknown Source)
+	weka.gui.explorer.PreprocessPanel$14.run(PreprocessPanel.java:534)
+	java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	java.awt.EventQueue.access$200(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.awt.EventQueue$3.run(Unknown Source)
+	java.security.AccessController.doPrivileged(Native Method)
+	java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	java.awt.EventQueue.dispatchEvent(Unknown Source)
+	java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.awt.EventDispatchThread.run(Unknown Source)
+
+	at tpp.TPPModel.extractNumericData(TPPModel.java:218)
+	at tpp.TPPModel.initialise(TPPModel.java:157)
+	at tpp.ScatterPlotModel.initialise(ScatterPlotModel.java:32)
+	at tpp.ScatterPlotModel.setInstances(ScatterPlotModel.java:28)
+	at tpp.TPPPanel.setInstances(TPPPanel.java:86)
+	at tpp.TPPExplorerPanel.setInstances(TPPExplorerPanel.java:42)
+	at weka.gui.explorer.Explorer$1.propertyChange(Explorer.java:258)
+	at java.beans.PropertyChangeSupport.fire(Unknown Source)
+	at java.beans.PropertyChangeSupport.firePropertyChange(Unknown Source)
+	at java.beans.PropertyChangeSupport.firePropertyChange(Unknown Source)
+	at weka.gui.explorer.PreprocessPanel$14.run(PreprocessPanel.java:534)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$200(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+2013-05-10 11:35:03 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.meta.OneClassClassifier
+2013-05-10 11:35:03 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.meta.OneClassClassifier -num "weka.classifiers.meta.generators.GaussianGenerator -S 1 -M 0.0 -SD 1.0" -nom "weka.classifiers.meta.generators.NominalGenerator -S 1" -trr 0.1 -tcl target -cvr 10 -cvf 10.0 -P 0.5 -S 1 -W weka.classifiers.meta.Bagging -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+java.lang.Exception: Target class value doesn't exist!
+	weka.classifiers.meta.OneClassClassifier.buildClassifier(OneClassClassifier.java:1040)
+	weka.gui.explorer.ClassifierPanel$18.run(ClassifierPanel.java:1372)
+
+	at weka.classifiers.meta.OneClassClassifier.buildClassifier(OneClassClassifier.java:1040)
+	at weka.gui.explorer.ClassifierPanel$18.run(ClassifierPanel.java:1372)
+2013-05-10 11:35:03 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Target class value doesn't exist!
+Checking for new packages...

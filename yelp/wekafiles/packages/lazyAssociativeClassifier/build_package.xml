@@ -1,0 +1,70 @@
+<project name="LAC-Weka-3.7" default="dist-zip" basedir="..">
+
+	<property name="version" value="1.0.0"/>
+	
+	<property name="src" value="src" />
+	<property name="lib" value="lib" />
+	<property name="build" value="build" />
+	<property name="build.classes" value="${build}/bin" />
+	<property name="dist" value="dist" />
+	<property name="package" value="${build}/package/lazy-associative-classifier" />
+	<property name="jar.name" value="lazy-associative-classifier.jar"/>
+
+	<path id="project.class.path">
+		<fileset dir="${lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="dist-folder">
+		
+		<copy todir="${package}/src" overwrite="true">
+			<fileset dir="${src}">
+				<include name="**/*.java"/>
+			</fileset>
+		</copy>
+		
+		<copy todir="${package}" overwrite="true">
+			<fileset dir="${build}">
+				<include name="build_package.xml"/>
+			</fileset>
+		</copy>
+		
+		<delete includeemptydirs="true">
+			<fileset dir="${build.classes}">
+				<include name="**/*"/>
+			</fileset>
+		</delete>
+		
+		<mkdir dir="${build.classes}"/>
+		
+		<javac srcdir="${src}" 
+				fork="yes"
+				destdir="${build.classes}"
+				source="1.6" target="1.6">
+			<classpath refid="project.class.path" /> 
+	    </javac>
+		
+		<jar destfile="${package}/${jar.name}">
+			<fileset dir="${build.classes}">
+				<include name="**/*.class"/>
+			</fileset>
+		</jar>
+	</target>
+
+	<target name="dist-zip" depends="dist-folder">
+		<zip destfile="${dist}/lazy-associative-classifier-${version}.zip">
+			<fileset dir="${package}">
+				<include name="**/*"/>
+				<include name="*"/>
+			</fileset>
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="${package}/src">
+				<include name="**/*"/>
+				<include name="*"/>
+			</fileset>
+		</delete>
+	</target>
+	
+</project>

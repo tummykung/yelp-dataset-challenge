@@ -1,0 +1,4 @@
+weka.core.converters
+weka.core.converters.cassandra
+weka.core.converters.cassandra.gui
+weka.gui.beans

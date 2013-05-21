@@ -1,0 +1,6 @@
+weka.classifiers
+weka.classifiers.meta
+weka.classifiers.meta.ensembleSelection
+weka.gui
+weka.gui.ensembleLibraryEditor
+weka.gui.ensembleLibraryEditor.tree

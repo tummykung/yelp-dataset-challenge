@@ -1,0 +1,85 @@
+# Database settings for Apache Hive 0.7.0.
+#
+# IMPORTANT: Hive only supports a limited subset of SQL-like 
+# functionality. The JDBC driver only supports reading from
+# tables.
+#
+# General information on database access can be found here:
+# http://weka.wikispaces.com/Databases
+#
+# url:     http://hive.apache.org/
+# jdbc:    https://github.com/pentaho/hive
+# author:  Mark Hall (mhall{[at]}pentaho{[dot]}com)
+# version: $Revision: $
+
+# JDBC driver (comma-separated list)
+#jdbcDriver=org.apache.hadoop.hive.jdbc.HiveDriver
+jdbcDriver=org.apache.hadoop.hive.jdbc.HiveDriver
+
+# auto commit is not supported by hive
+setAutoCommit=false
+
+# database URL
+jdbcURL=jdbc:hive://localhost:10000/default
+
+# specific data types
+# string, getString() = 0;    --> nominal
+# boolean, getBoolean() = 1;  --> nominal
+# double, getDouble() = 2;    --> numeric
+# byte, getByte() = 3;        --> numeric
+# short, getByte()= 4;        --> numeric
+# int, getInteger() = 5;      --> numeric
+# long, getLong() = 6;        --> numeric
+# float, getFloat() = 7;      --> numeric
+# date, getDate() = 8;        --> date
+# text, getString() = 9;      --> string
+# time, getTime() = 10;       --> date
+
+BOOLEAN=1
+boolean=1
+TINYINT=3
+tinyint=3
+SMALLINT=3
+smalling=3
+INT=5
+int=5
+BIGINT=6
+bigint=6
+FLOAT=7
+float=7
+DOUBLE=2
+double=2
+STRING=0
+string=0
+
+# other options
+CREATE_DOUBLE=DOUBLE
+CREATE_STRING=STRING
+CREATE_INT=INT
+CREATE_DATE=DATETIME
+DateFormat=yyyy-MM-dd HH:mm:ss
+checkUpperCaseNames=false
+checkLowerCaseNames=false
+checkForTable=true
+
+# All the reserved keywords for this database
+Keywords=\
+  AND,\
+  ASC,\
+  BY,\
+  DESC,\
+  FROM,\
+  GROUP,\
+  INSERT,\
+  ORDER,\
+  SELECT,\
+  UPDATE,\
+  WHERE
+
+# The character to append to attribute names to avoid exceptions due to
+# clashes between keywords and attribute names
+KeywordsMaskChar=_
+
+#flags for loading and saving instances using DatabaseLoader/Saver
+nominalToStringLimit=50
+idColumn=auto_generated_id

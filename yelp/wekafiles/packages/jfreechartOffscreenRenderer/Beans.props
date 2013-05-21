@@ -1,0 +1,2 @@
+# Specifies a plugin chart renderer
+weka.gui.beans.OffscreenChartRenderer=weka.gui.beans.JFreeChartOffscreenChartRenderer

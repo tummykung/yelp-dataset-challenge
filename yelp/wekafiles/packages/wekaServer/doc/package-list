@@ -1,0 +1,6 @@
+weka.core
+weka.gui.beans
+weka.gui.explorer
+weka.server
+weka.server.knowledgeFlow
+weka.server.logging

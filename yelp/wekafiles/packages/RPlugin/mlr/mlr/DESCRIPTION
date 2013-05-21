@@ -1,0 +1,59 @@
+Package: mlr
+Type: Package
+Title: mlr: Machine Learning in R
+Version: 0.3.1206
+Date: 2009-01-01
+Author: Bernd Bischl, Max Wornowizki, Katharina Borg
+Maintainer: Bernd Bischl <bernd_bischl@gmx.net>
+Description: no
+License: GPL (>= 2)
+LazyLoad: yes
+Depends: R (>= 2.8.0), methods, reshape, abind, boot, klaR, e1071,
+    digest
+Suggests: MASS, snowfall, multicore, Rmpi, mlbench, cmaes, kernlab,
+    rpart, randomForest, adabag, kknn, ada, adabag, party, mboost, mda,
+    gbm, nnet, penalized, RWeka, grplasso, earth, sda, DiceKriging,
+    pls, foreign, gplots, rsm
+Collate: 'aaa.r' 'object.r' 'learner.desc.r' 'learner.r' 'task.desc.r'
+    'prepare.df.r' 'data.desc.r' 'wrapped.model.r' 'pred.learner.r'
+    'train.learner.r' 'learnerR.r' 'ada.r' 'adaboost.m1.classif.r'
+    'aggr.r' 'prediction.r' 'as.rocr.preds.r' 'set.label.r' 'set.id.r'
+    'set.hyper.pars.r' 'base.wrapper.r' 'benchexp.r' 'opt.control.r'
+    'resample.desc.r' 'opt.wrapper.r' 'task.learn.r' 'benchmark.r'
+    'benchresult.r' 'blackboost.classif.r' 'blackboost.regr.r'
+    'bs.desc.r' 'resample.instance.r' 'bs.instance.r' 'bs632.desc.r'
+    'get.train.test.r' 'bs632.instance.r' 'bs632plus.desc.r'
+    'bs632plus.instance.r' 'check.ranges.r' 'task.classif.r'
+    'check.task.learner.r' 'check.task.r' 'combine.ranges.r'
+    'conf.matrix.r' 'control.tune.r' 'control.cmaes.r' 'control.grid.r'
+    'control.optim.r' 'control.varsel.r' 'control.randomvarsel.r'
+    'control.seq.r' 'ctree.classif.r' 'cv.desc.r' 'cv.instance.r'
+    'cv.rep.desc.r' 'cv.rep.instance.r' 'cv.strat.desc.r'
+    'cv.strat.instance.r' 'data.chars.r' 'earth.regr.r'
+    'errorhandler.r' 'eval.r' 'export.r' 'filter.wrapper.r'
+    'gbm.classif.r' 'gbm.regr.r' 'get.learners.r' 'glmboost.classif.r'
+    'grplasso.classif.r' 'helpers.r' 'subsample.desc.r'
+    'holdout.desc.r' 'subsample.instance.r' 'holdout.instance.r'
+    'j48.r' 'JRip.r' 'kknn.classif.r' 'kknn.regr.r' 'krigdice.regr.r'
+    'ksvm.classif.r' 'ksvm.regr.r' 'lasso.r' 'lda.r'
+    'learner.failure.r' 'learner.make.r' 'learners.r' 'lm.r' 'loclda.r'
+    'log.r' 'logreg.r' 'loss.r' 'lssvm.r' 'lvq1.classif.r'
+    'mars.regr.r' 'mda.r' 'measures.r' 'multiclass.wrapper.r'
+    'multinom.r' 'mylapply.r' 'nb.r' 'dwd.r' 'nnet.r' 'nnet.regr.r' 'novars.r'
+    'OneR.r' 'opt.result.r' 'optml.helpers.r' 'par.desc.r' 'parallel.r'
+    'PART.r' 'pcr.r' 'penalizedSVM.R' 'performance.r'
+    'prediction.grouped.r' 'performance.grouped.r'
+    'prediction.resample.r' 'performance.resample.r' 'predict.r'
+    'preproc.wrapper.r' 'qda.r' 'randomForest.classif.r'
+    'randomForest.regr.r' 'rda.r' 'read.arff.r' 'resample.desc.make.r'
+    'resample.instance.make.r' 'resample.fit.r' 'ridge.r' 'ROCR_aux.R'
+    'ROCR_mlr_plots.r' 'ROCR_performance_measures.R'
+    'ROCR_performance.R' 'ROCR_performance_plots.R' 'ROCR_prediction.R'
+    'ROCR_zzz.R' 'rpart.classif.r' 'rpart.regr.r' 'rsm.r' 'rvm.regr.r'
+    'sda.r' 'svm.classif.r' 'task.regr.r' 'task.make.r' 'threshold.r'
+    'train.task.r' 'tune.cmaes.r' 'tune.grid.r' 'tune.helpers.r'
+    'tune.optim.r' 'tune.r' 'tune.threshold.r' 'tune.wrapper.r'
+    'varsel.bestcor.r' 'varsel.helpers.r' 'varsel.hybrid.r'
+    'varsel.hybrid2.r' 'varsel.r' 'varsel.random.r' 'varsel.seq.r'
+    'varsel.wrapper.r'
+Packaged: 2010-10-07 13:59:02 UTC; bischl

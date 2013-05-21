@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+    <info organisation="${ivy.artifact.group}" module="${ivy.artifact.id}" revision="${project.revision}" />
+    
+    <configurations>
+        <conf name="default"/>
+        <conf name="test" visibility="private"/>
+        <conf name="source" />          
+    </configurations>
+    
+    <publications>
+            <artifact name="${ivy.artifact.id}" type="jar" conf="default"/>
+            <artifact name="${ivy.artifact.id}" m:classifier="sources" type="source" ext="jar" conf="source"/>
+    </publications>   
+    
+    <dependencies defaultconf="default->default">
+        <!-- this is an example dependency.  Add the dependencies for your project here -->
+
+    <dependency org="commons-logging" name="commons-logging" rev="${dependency.commons-logging.revision}" transitive="false" conf="default->default" changing="true" />
+
+    <dependency org="org.slf4j" name="slf4j-api" rev="${dependency.slf4j-api.revision}" transitive="false" conf="default->default" changing="true"/>
+    <dependency org="org.slf4j" name="slf4j-simple" rev="${dependency.slf4j-jcl.revision}" transitive="false" conf="default->default" changing="true"/>
+
+    <dependency org="org.eobjects.sassyreader" name="SassyReader" rev="${dependency.sassy-reader.revision}" transitive="false" conf="default->default" changing="true" />
+
+    <dependency org="pentaho.weka" name="pdm-3.7-ce" rev="${dependency.weka.revision}" transitive="false" conf="default->default" changing="true" />
+
+<!--        <dependency org="commons-logging" name="commons-logging" rev="1.1" transitive="false"/> -->
+    </dependencies>
+</ivy-module>
