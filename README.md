@@ -1,6 +1,6 @@
 Yelp Dataset Challenge
 ======================
-um Chaturapruek (Harvey Mudd College), Berit Johnson (Franklin W. Olin College of Engineering)
+Tum Chaturapruek (Harvey Mudd College), Berit Johnson (Franklin W. Olin College of Engineering)
 
 Mentor: Bálint Daróczy, Számítástechnikai és Automatizálási Kutatóintézet
 
