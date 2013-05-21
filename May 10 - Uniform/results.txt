@@ -1,0 +1,717 @@
+0.01 - Stochastic Gradient Descent (SGD) on test_graph_mmwith K =100
+[matrixmarket] => [true]
+[training] => [test_graph_mm]
+[validation] => [test_graph_mme]
+[D] => [100]
+[max_iter] => [60]
+[ncpus] => [16]
+[minval] => [1]
+[maxval] => [5]
+[quiet] => [1]
+[lambda] => [0.01]
+
+ === REPORT FOR sharder() ===
+[Timings]
+edata_flush:		0.016631s	 (count: 2, min: 0.008127s, max: 0.008504, avg: 0.0083155s)
+execute_sharding:		0.207078 s
+preprocessing:		0.102571 s
+read_shovel:		0.024112s	 (count: 2, min: 0.011809s, max: 0.012303, avg: 0.012056s)
+shard_final:		0.080535s	 (count: 2, min: 0.04s, max: 0.040535, avg: 0.0402675s)
+shovel_flush:		0.082927s	 (count: 2, min: 0.040563s, max: 0.042364, avg: 0.0414635s)
+shovel_readcompressed:		0.02322s	 (count: 2, min: 0.01138s, max: 0.01184, avg: 0.01161s)
+[Other]
+app:	sharder
+
+ === REPORT FOR sharder() ===
+[Timings]
+edata_flush:		0.000697s	 (count: 2, min: 0.000307s, max: 0.00039, avg: 0.0003485s)
+execute_sharding:		0.007281 s
+preprocessing:		0.001571 s
+read_shovel:		0.000353s	 (count: 2, min: 0.000137s, max: 0.000216, avg: 0.0001765s)
+shard_final:		0.002062s	 (count: 2, min: 0.000869s, max: 0.001193, avg: 0.001031s)
+shovel_flush:		0.001043s	 (count: 2, min: 0.000336s, max: 0.000707, avg: 0.0005215s)
+shovel_readcompressed:		0.000203s	 (count: 2, min: 7.5e-05s, max: 0.000128, avg: 0.0001015s)
+[Other]
+app:	sharder
+[feature_width] => [100]
+[users] => [45979]
+[movies] => [11537]
+[training_ratings] => [170045]
+[number_of_threads] => [16]
+[membudget_Mb] => [800]
+  0.958811) Iteration:   0 Training RMSE:   1.69018  Validation  RMSE:   1.70136
+   1.21383) Iteration:   1 Training RMSE:   1.68472  Validation  RMSE:   1.68416
+   1.45948) Iteration:   2 Training RMSE:   1.67277  Validation  RMSE:   1.69743
+     1.713) Iteration:   3 Training RMSE:   1.65975  Validation  RMSE:   1.69764
+   1.97619) Iteration:   4 Training RMSE:   1.65012  Validation  RMSE:   1.70712
+   2.18909) Iteration:   5 Training RMSE:   1.64438  Validation  RMSE:   1.70587
+    2.4481) Iteration:   6 Training RMSE:   1.63926  Validation  RMSE:   1.70514
+   2.68936) Iteration:   7 Training RMSE:   1.63528  Validation  RMSE:   1.70372
+   2.95898) Iteration:   8 Training RMSE:   1.63253  Validation  RMSE:   1.69885
+   3.20652) Iteration:   9 Training RMSE:   1.63051  Validation  RMSE:   1.69446
+   3.44962) Iteration:  10 Training RMSE:   1.62856  Validation  RMSE:    1.6918
+   3.71469) Iteration:  11 Training RMSE:   1.62654  Validation  RMSE:   1.69048
+   3.97746) Iteration:  12 Training RMSE:   1.62471  Validation  RMSE:     1.689
+   4.20547) Iteration:  13 Training RMSE:   1.62321  Validation  RMSE:   1.68809
+   4.46556) Iteration:  14 Training RMSE:   1.62188  Validation  RMSE:   1.68658
+   4.72376) Iteration:  15 Training RMSE:   1.62064  Validation  RMSE:   1.68472
+   4.98938) Iteration:  16 Training RMSE:   1.61949  Validation  RMSE:   1.68313
+   5.23105) Iteration:  17 Training RMSE:   1.61848  Validation  RMSE:   1.68225
+    5.5053) Iteration:  18 Training RMSE:   1.61754  Validation  RMSE:   1.68187
+   5.81271) Iteration:  19 Training RMSE:   1.61668  Validation  RMSE:   1.68182
+   6.05377) Iteration:  20 Training RMSE:   1.61587  Validation  RMSE:   1.68218
+   6.31757) Iteration:  21 Training RMSE:   1.61512  Validation  RMSE:   1.68271
+   6.58443) Iteration:  22 Training RMSE:   1.61445  Validation  RMSE:   1.68322
+   6.84769) Iteration:  23 Training RMSE:   1.61383  Validation  RMSE:   1.68365
+   7.07953) Iteration:  24 Training RMSE:   1.61327  Validation  RMSE:   1.68418
+   7.36816) Iteration:  25 Training RMSE:   1.61278  Validation  RMSE:   1.68464
+   7.66179) Iteration:  26 Training RMSE:   1.61232  Validation  RMSE:    1.6851
+   7.92161) Iteration:  27 Training RMSE:    1.6119  Validation  RMSE:   1.68557
+   8.19254) Iteration:  28 Training RMSE:   1.61152  Validation  RMSE:   1.68604
+   8.45281) Iteration:  29 Training RMSE:   1.61117  Validation  RMSE:   1.68645
+    8.6886) Iteration:  30 Training RMSE:   1.61086  Validation  RMSE:   1.68682
+    8.9519) Iteration:  31 Training RMSE:   1.61057  Validation  RMSE:   1.68718
+   9.20719) Iteration:  32 Training RMSE:   1.61031  Validation  RMSE:   1.68752
+   9.44962) Iteration:  33 Training RMSE:   1.61008  Validation  RMSE:   1.68783
+   9.71343) Iteration:  34 Training RMSE:   1.60987  Validation  RMSE:   1.68811
+   9.97172) Iteration:  35 Training RMSE:   1.60968  Validation  RMSE:   1.68837
+   10.2297) Iteration:  36 Training RMSE:   1.60951  Validation  RMSE:   1.68861
+   10.4531) Iteration:  37 Training RMSE:   1.60936  Validation  RMSE:   1.68883
+   10.7089) Iteration:  38 Training RMSE:   1.60922  Validation  RMSE:   1.68904
+   10.9477) Iteration:  39 Training RMSE:   1.60909  Validation  RMSE:   1.68921
+   11.2216) Iteration:  40 Training RMSE:   1.60898  Validation  RMSE:   1.68938
+   11.4686) Iteration:  41 Training RMSE:   1.60888  Validation  RMSE:   1.68953
+   11.7114) Iteration:  42 Training RMSE:   1.60879  Validation  RMSE:   1.68967
+   11.9748) Iteration:  43 Training RMSE:   1.60871  Validation  RMSE:   1.68979
+   12.2215) Iteration:  44 Training RMSE:   1.60863  Validation  RMSE:    1.6899
+   12.4968) Iteration:  45 Training RMSE:   1.60857  Validation  RMSE:   1.68999
+   12.7293) Iteration:  46 Training RMSE:   1.60851  Validation  RMSE:   1.69008
+   12.9816) Iteration:  47 Training RMSE:   1.60845  Validation  RMSE:   1.69016
+   13.2353) Iteration:  48 Training RMSE:    1.6084  Validation  RMSE:   1.69024
+   13.4922) Iteration:  49 Training RMSE:   1.60836  Validation  RMSE:    1.6903
+   13.7159) Iteration:  50 Training RMSE:   1.60832  Validation  RMSE:   1.69036
+   13.9555) Iteration:  51 Training RMSE:   1.60829  Validation  RMSE:   1.69042
+   14.1729) Iteration:  52 Training RMSE:   1.60825  Validation  RMSE:   1.69046
+   14.4159) Iteration:  53 Training RMSE:   1.60822  Validation  RMSE:   1.69051
+   14.6935) Iteration:  54 Training RMSE:    1.6082  Validation  RMSE:   1.69055
+   14.9315) Iteration:  55 Training RMSE:   1.60817  Validation  RMSE:   1.69058
+   15.1942) Iteration:  56 Training RMSE:   1.60815  Validation  RMSE:   1.69062
+   15.4971) Iteration:  57 Training RMSE:   1.60813  Validation  RMSE:   1.69065
+   15.7451) Iteration:  58 Training RMSE:   1.60812  Validation  RMSE:   1.69067
+   15.9546) Iteration:  59 Training RMSE:    1.6081  Validation  RMSE:    1.6907
+0.1 - Stochastic Gradient Descent (SGD) on test_graph_mmwith K =100
+[matrixmarket] => [true]
+[training] => [test_graph_mm]
+[validation] => [test_graph_mme]
+[D] => [100]
+[max_iter] => [60]
+[ncpus] => [16]
+[minval] => [1]
+[maxval] => [5]
+[quiet] => [1]
+[lambda] => [0.1]
+[feature_width] => [100]
+[users] => [45979]
+[movies] => [11537]
+[training_ratings] => [170045]
+[number_of_threads] => [16]
+[membudget_Mb] => [800]
+  0.680182) Iteration:   0 Training RMSE:   1.69018  Validation  RMSE:   1.70142
+  0.927467) Iteration:   1 Training RMSE:   1.68483  Validation  RMSE:    1.6812
+   1.18005) Iteration:   2 Training RMSE:   1.67324  Validation  RMSE:   1.67477
+   1.43831) Iteration:   3 Training RMSE:   1.66049  Validation  RMSE:   1.68014
+   1.66073) Iteration:   4 Training RMSE:   1.65089  Validation  RMSE:   1.68331
+   1.94757) Iteration:   5 Training RMSE:   1.64464  Validation  RMSE:   1.68595
+   2.21619) Iteration:   6 Training RMSE:   1.63967  Validation  RMSE:   1.68279
+   2.46975) Iteration:   7 Training RMSE:   1.63532  Validation  RMSE:   1.67809
+   2.76931) Iteration:   8 Training RMSE:   1.63226  Validation  RMSE:   1.67456
+   3.03449) Iteration:   9 Training RMSE:   1.63021  Validation  RMSE:   1.67316
+   3.27792) Iteration:  10 Training RMSE:   1.62835  Validation  RMSE:   1.67507
+   3.53873) Iteration:  11 Training RMSE:    1.6265  Validation  RMSE:   1.67562
+   3.82766) Iteration:  12 Training RMSE:   1.62481  Validation  RMSE:   1.67545
+   4.10261) Iteration:  13 Training RMSE:    1.6233  Validation  RMSE:   1.67472
+   4.33236) Iteration:  14 Training RMSE:   1.62198  Validation  RMSE:   1.67421
+   4.64828) Iteration:  15 Training RMSE:   1.62076  Validation  RMSE:   1.67499
+   4.92366) Iteration:  16 Training RMSE:   1.61968  Validation  RMSE:   1.67593
+   5.24126) Iteration:  17 Training RMSE:    1.6187  Validation  RMSE:   1.67653
+   5.51461) Iteration:  18 Training RMSE:   1.61777  Validation  RMSE:   1.67693
+   5.78817) Iteration:  19 Training RMSE:    1.6169  Validation  RMSE:   1.67754
+   6.05318) Iteration:  20 Training RMSE:   1.61611  Validation  RMSE:   1.67805
+   6.31507) Iteration:  21 Training RMSE:   1.61538  Validation  RMSE:   1.67869
+   6.62523) Iteration:  22 Training RMSE:   1.61468  Validation  RMSE:    1.6793
+   6.88758) Iteration:  23 Training RMSE:   1.61407  Validation  RMSE:   1.67988
+   7.14124) Iteration:  24 Training RMSE:   1.61353  Validation  RMSE:   1.68054
+   7.40044) Iteration:  25 Training RMSE:   1.61304  Validation  RMSE:   1.68111
+     7.653) Iteration:  26 Training RMSE:   1.61258  Validation  RMSE:   1.68159
+   7.87997) Iteration:  27 Training RMSE:   1.61216  Validation  RMSE:     1.682
+   8.12594) Iteration:  28 Training RMSE:   1.61178  Validation  RMSE:   1.68238
+   8.45124) Iteration:  29 Training RMSE:   1.61143  Validation  RMSE:   1.68275
+   8.76477) Iteration:  30 Training RMSE:   1.61112  Validation  RMSE:   1.68309
+   9.04924) Iteration:  31 Training RMSE:   1.61083  Validation  RMSE:   1.68343
+   9.30692) Iteration:  32 Training RMSE:   1.61057  Validation  RMSE:   1.68374
+   9.55224) Iteration:  33 Training RMSE:   1.61033  Validation  RMSE:   1.68403
+   9.81059) Iteration:  34 Training RMSE:   1.61011  Validation  RMSE:    1.6843
+    10.037) Iteration:  35 Training RMSE:   1.60992  Validation  RMSE:   1.68454
+   10.3344) Iteration:  36 Training RMSE:   1.60974  Validation  RMSE:   1.68477
+   10.5452) Iteration:  37 Training RMSE:   1.60959  Validation  RMSE:   1.68498
+   10.8349) Iteration:  38 Training RMSE:   1.60944  Validation  RMSE:   1.68517
+   11.0963) Iteration:  39 Training RMSE:   1.60932  Validation  RMSE:   1.68534
+    11.362) Iteration:  40 Training RMSE:    1.6092  Validation  RMSE:   1.68549
+   11.6279) Iteration:  41 Training RMSE:    1.6091  Validation  RMSE:   1.68561
+   11.8652) Iteration:  42 Training RMSE:   1.60901  Validation  RMSE:   1.68572
+   12.1276) Iteration:  43 Training RMSE:   1.60893  Validation  RMSE:   1.68583
+   12.3771) Iteration:  44 Training RMSE:   1.60885  Validation  RMSE:   1.68592
+    12.645) Iteration:  45 Training RMSE:   1.60879  Validation  RMSE:     1.686
+   12.8943) Iteration:  46 Training RMSE:   1.60873  Validation  RMSE:   1.68608
+   13.2094) Iteration:  47 Training RMSE:   1.60867  Validation  RMSE:   1.68614
+   13.4926) Iteration:  48 Training RMSE:   1.60863  Validation  RMSE:    1.6862
+   13.6764) Iteration:  49 Training RMSE:   1.60858  Validation  RMSE:   1.68625
+   13.9299) Iteration:  50 Training RMSE:   1.60854  Validation  RMSE:    1.6863
+   14.2122) Iteration:  51 Training RMSE:   1.60851  Validation  RMSE:   1.68634
+   14.4745) Iteration:  52 Training RMSE:   1.60847  Validation  RMSE:   1.68638
+   14.7317) Iteration:  53 Training RMSE:   1.60844  Validation  RMSE:   1.68641
+   14.9619) Iteration:  54 Training RMSE:   1.60842  Validation  RMSE:   1.68644
+   15.2153) Iteration:  55 Training RMSE:   1.60839  Validation  RMSE:   1.68647
+   15.4689) Iteration:  56 Training RMSE:   1.60837  Validation  RMSE:   1.68649
+   15.7254) Iteration:  57 Training RMSE:   1.60835  Validation  RMSE:   1.68652
+   15.9802) Iteration:  58 Training RMSE:   1.60834  Validation  RMSE:   1.68654
+    16.238) Iteration:  59 Training RMSE:   1.60832  Validation  RMSE:   1.68655
+1 - Stochastic Gradient Descent (SGD) on test_graph_mmwith K =100
+[matrixmarket] => [true]
+[training] => [test_graph_mm]
+[validation] => [test_graph_mme]
+[D] => [100]
+[max_iter] => [60]
+[ncpus] => [16]
+[minval] => [-5]
+[maxval] => [5]
+[quiet] => [1]
+[lambda] => [1]
+[feature_width] => [100]
+[users] => [45979]
+[movies] => [11537]
+[training_ratings] => [170045]
+[number_of_threads] => [16]
+[membudget_Mb] => [800]
+  0.657086) Iteration:   0 Training RMSE:   1.69016  Validation  RMSE:   1.69692
+  0.903506) Iteration:   1 Training RMSE:   1.68458  Validation  RMSE:   1.69317
+   1.17494) Iteration:   2 Training RMSE:   1.67407  Validation  RMSE:   1.68471
+   1.41158) Iteration:   3 Training RMSE:   1.66482  Validation  RMSE:    1.6986
+   1.67495) Iteration:   4 Training RMSE:   1.65642  Validation  RMSE:   1.70509
+   1.88961) Iteration:   5 Training RMSE:   1.65168  Validation  RMSE:     1.712
+   2.13663) Iteration:   6 Training RMSE:   1.64938  Validation  RMSE:   1.70942
+   2.39947) Iteration:   7 Training RMSE:     1.648  Validation  RMSE:   1.71022
+    2.6495) Iteration:   8 Training RMSE:   1.64667  Validation  RMSE:   1.71243
+   2.90222) Iteration:   9 Training RMSE:   1.64551  Validation  RMSE:   1.71446
+   3.16976) Iteration:  10 Training RMSE:   1.64449  Validation  RMSE:   1.71564
+   3.39938) Iteration:  11 Training RMSE:   1.64344  Validation  RMSE:   1.71724
+   3.67213) Iteration:  12 Training RMSE:   1.64238  Validation  RMSE:   1.72024
+   3.93894) Iteration:  13 Training RMSE:   1.64138  Validation  RMSE:   1.72264
+   4.15236) Iteration:  14 Training RMSE:    1.6404  Validation  RMSE:   1.72267
+   4.42333) Iteration:  15 Training RMSE:   1.63944  Validation  RMSE:   1.72304
+   4.68553) Iteration:  16 Training RMSE:   1.63845  Validation  RMSE:    1.7239
+    4.9604) Iteration:  17 Training RMSE:   1.63751  Validation  RMSE:   1.72485
+    5.2084) Iteration:  18 Training RMSE:   1.63658  Validation  RMSE:   1.72579
+    5.4673) Iteration:  19 Training RMSE:   1.63578  Validation  RMSE:   1.72632
+    5.7086) Iteration:  20 Training RMSE:   1.63505  Validation  RMSE:   1.72684
+   5.96461) Iteration:  21 Training RMSE:   1.63437  Validation  RMSE:   1.72759
+   6.22105) Iteration:  22 Training RMSE:   1.63374  Validation  RMSE:   1.72838
+   6.46449) Iteration:  23 Training RMSE:   1.63317  Validation  RMSE:   1.72914
+   6.72617) Iteration:  24 Training RMSE:   1.63265  Validation  RMSE:   1.72986
+   6.97539) Iteration:  25 Training RMSE:   1.63217  Validation  RMSE:   1.73056
+    7.2342) Iteration:  26 Training RMSE:   1.63172  Validation  RMSE:   1.73121
+   7.49038) Iteration:  27 Training RMSE:   1.63132  Validation  RMSE:    1.7318
+    7.7101) Iteration:  28 Training RMSE:   1.63096  Validation  RMSE:   1.73235
+   8.00962) Iteration:  29 Training RMSE:   1.63063  Validation  RMSE:   1.73283
+   8.28032) Iteration:  30 Training RMSE:   1.63033  Validation  RMSE:   1.73327
+   8.53314) Iteration:  31 Training RMSE:   1.63005  Validation  RMSE:   1.73361
+   8.78504) Iteration:  32 Training RMSE:    1.6298  Validation  RMSE:   1.73394
+   9.02876) Iteration:  33 Training RMSE:   1.62956  Validation  RMSE:   1.73424
+   9.28849) Iteration:  34 Training RMSE:   1.62935  Validation  RMSE:   1.73451
+   9.52986) Iteration:  35 Training RMSE:   1.62916  Validation  RMSE:   1.73477
+    9.8087) Iteration:  36 Training RMSE:   1.62899  Validation  RMSE:   1.73499
+   10.0529) Iteration:  37 Training RMSE:   1.62884  Validation  RMSE:   1.73519
+   10.3019) Iteration:  38 Training RMSE:    1.6287  Validation  RMSE:   1.73538
+   10.5481) Iteration:  39 Training RMSE:   1.62858  Validation  RMSE:   1.73555
+    10.774) Iteration:  40 Training RMSE:   1.62846  Validation  RMSE:   1.73572
+    11.056) Iteration:  41 Training RMSE:   1.62837  Validation  RMSE:   1.73586
+   11.2758) Iteration:  42 Training RMSE:   1.62828  Validation  RMSE:   1.73599
+   11.5376) Iteration:  43 Training RMSE:   1.62819  Validation  RMSE:   1.73611
+   11.7992) Iteration:  44 Training RMSE:   1.62812  Validation  RMSE:   1.73621
+   12.0591) Iteration:  45 Training RMSE:   1.62806  Validation  RMSE:   1.73631
+   12.3316) Iteration:  46 Training RMSE:     1.628  Validation  RMSE:    1.7364
+   12.6289) Iteration:  47 Training RMSE:   1.62794  Validation  RMSE:   1.73647
+   12.8383) Iteration:  48 Training RMSE:    1.6279  Validation  RMSE:   1.73654
+   13.0914) Iteration:  49 Training RMSE:   1.62785  Validation  RMSE:   1.73661
+   13.3527) Iteration:  50 Training RMSE:   1.62781  Validation  RMSE:   1.73667
+   13.5972) Iteration:  51 Training RMSE:   1.62778  Validation  RMSE:   1.73672
+   13.8537) Iteration:  52 Training RMSE:   1.62775  Validation  RMSE:   1.73677
+   14.1065) Iteration:  53 Training RMSE:   1.62772  Validation  RMSE:   1.73681
+   14.3638) Iteration:  54 Training RMSE:   1.62769  Validation  RMSE:   1.73685
+   14.6123) Iteration:  55 Training RMSE:   1.62767  Validation  RMSE:   1.73688
+   14.8635) Iteration:  56 Training RMSE:   1.62765  Validation  RMSE:   1.73692
+   15.1273) Iteration:  57 Training RMSE:   1.62763  Validation  RMSE:   1.73694
+   15.3778) Iteration:  58 Training RMSE:   1.62761  Validation  RMSE:   1.73697
+   15.6328) Iteration:  59 Training RMSE:    1.6276  Validation  RMSE:   1.73699
+0.01 - Stochastic Gradient Descent (SGD) on test_graph_mmwith K =13
+[matrixmarket] => [true]
+[training] => [test_graph_mm]
+[validation] => [test_graph_mme]
+[D] => [13]
+[max_iter] => [60]
+[ncpus] => [16]
+[minval] => [1]
+[maxval] => [5]
+[quiet] => [1]
+[lambda] => [0.01]
+[feature_width] => [13]
+[users] => [45979]
+[movies] => [11537]
+[training_ratings] => [170045]
+[number_of_threads] => [16]
+[membudget_Mb] => [800]
+  0.268467) Iteration:   0 Training RMSE:    1.4192  Validation  RMSE:   1.36126
+  0.481494) Iteration:   1 Training RMSE:   1.32139  Validation  RMSE:   1.29607
+  0.676736) Iteration:   2 Training RMSE:   1.27016  Validation  RMSE:   1.25912
+  0.885024) Iteration:   3 Training RMSE:   1.23663  Validation  RMSE:   1.23447
+   1.09098) Iteration:   4 Training RMSE:   1.21244  Validation  RMSE:   1.21643
+   1.35442) Iteration:   5 Training RMSE:   1.19395  Validation  RMSE:   1.20276
+   1.57839) Iteration:   6 Training RMSE:   1.17932  Validation  RMSE:   1.19195
+   1.77982) Iteration:   7 Training RMSE:   1.16743  Validation  RMSE:   1.18329
+   1.98949) Iteration:   8 Training RMSE:    1.1576  Validation  RMSE:   1.17623
+   2.17449) Iteration:   9 Training RMSE:   1.14935  Validation  RMSE:   1.17029
+   2.36902) Iteration:  10 Training RMSE:   1.14236  Validation  RMSE:   1.16533
+   2.57538) Iteration:  11 Training RMSE:   1.13638  Validation  RMSE:   1.16113
+   2.78451) Iteration:  12 Training RMSE:   1.13123  Validation  RMSE:   1.15749
+    2.9936) Iteration:  13 Training RMSE:   1.12676  Validation  RMSE:   1.15437
+   3.23574) Iteration:  14 Training RMSE:   1.12287  Validation  RMSE:   1.15166
+   3.44837) Iteration:  15 Training RMSE:   1.11946  Validation  RMSE:   1.14933
+   3.69183) Iteration:  16 Training RMSE:   1.11648  Validation  RMSE:   1.14729
+   3.89109) Iteration:  17 Training RMSE:   1.11385  Validation  RMSE:   1.14548
+   4.10189) Iteration:  18 Training RMSE:   1.11153  Validation  RMSE:   1.14391
+   4.34624) Iteration:  19 Training RMSE:   1.10947  Validation  RMSE:   1.14253
+   4.58993) Iteration:  20 Training RMSE:   1.10766  Validation  RMSE:   1.14131
+   4.79689) Iteration:  21 Training RMSE:   1.10604  Validation  RMSE:   1.14023
+   5.01431) Iteration:  22 Training RMSE:    1.1046  Validation  RMSE:   1.13927
+   5.24023) Iteration:  23 Training RMSE:   1.10332  Validation  RMSE:   1.13841
+   5.48506) Iteration:  24 Training RMSE:   1.10218  Validation  RMSE:   1.13765
+   5.68742) Iteration:  25 Training RMSE:   1.10116  Validation  RMSE:   1.13698
+     5.916) Iteration:  26 Training RMSE:   1.10025  Validation  RMSE:   1.13637
+   6.17021) Iteration:  27 Training RMSE:   1.09944  Validation  RMSE:   1.13583
+   6.40657) Iteration:  28 Training RMSE:   1.09872  Validation  RMSE:   1.13536
+   6.67647) Iteration:  29 Training RMSE:   1.09806  Validation  RMSE:   1.13493
+   6.87717) Iteration:  30 Training RMSE:   1.09748  Validation  RMSE:   1.13454
+   7.09524) Iteration:  31 Training RMSE:   1.09696  Validation  RMSE:    1.1342
+   7.30619) Iteration:  32 Training RMSE:   1.09649  Validation  RMSE:   1.13389
+   7.55958) Iteration:  33 Training RMSE:   1.09607  Validation  RMSE:   1.13362
+   7.80674) Iteration:  34 Training RMSE:    1.0957  Validation  RMSE:   1.13337
+   8.05204) Iteration:  35 Training RMSE:   1.09536  Validation  RMSE:   1.13315
+   8.27644) Iteration:  36 Training RMSE:   1.09505  Validation  RMSE:   1.13295
+   8.49197) Iteration:  37 Training RMSE:   1.09478  Validation  RMSE:   1.13277
+   8.70576) Iteration:  38 Training RMSE:   1.09454  Validation  RMSE:   1.13261
+   8.91104) Iteration:  39 Training RMSE:   1.09432  Validation  RMSE:   1.13247
+   9.11416) Iteration:  40 Training RMSE:   1.09412  Validation  RMSE:   1.13234
+   9.36463) Iteration:  41 Training RMSE:   1.09394  Validation  RMSE:   1.13222
+    9.6169) Iteration:  42 Training RMSE:   1.09378  Validation  RMSE:   1.13211
+   9.88321) Iteration:  43 Training RMSE:   1.09364  Validation  RMSE:   1.13202
+   10.1142) Iteration:  44 Training RMSE:   1.09351  Validation  RMSE:   1.13194
+   10.3583) Iteration:  45 Training RMSE:   1.09339  Validation  RMSE:   1.13186
+   10.6318) Iteration:  46 Training RMSE:   1.09329  Validation  RMSE:   1.13179
+   10.9119) Iteration:  47 Training RMSE:    1.0932  Validation  RMSE:   1.13173
+   11.1368) Iteration:  48 Training RMSE:   1.09311  Validation  RMSE:   1.13167
+   11.3657) Iteration:  49 Training RMSE:   1.09304  Validation  RMSE:   1.13163
+   11.5748) Iteration:  50 Training RMSE:   1.09297  Validation  RMSE:   1.13158
+    11.813) Iteration:  51 Training RMSE:   1.09291  Validation  RMSE:   1.13154
+   12.0668) Iteration:  52 Training RMSE:   1.09285  Validation  RMSE:   1.13151
+   12.3317) Iteration:  53 Training RMSE:    1.0928  Validation  RMSE:   1.13147
+    12.572) Iteration:  54 Training RMSE:   1.09276  Validation  RMSE:   1.13144
+   12.8371) Iteration:  55 Training RMSE:   1.09272  Validation  RMSE:   1.13142
+    13.061) Iteration:  56 Training RMSE:   1.09268  Validation  RMSE:   1.13139
+   13.2699) Iteration:  57 Training RMSE:   1.09265  Validation  RMSE:   1.13137
+   13.5118) Iteration:  58 Training RMSE:   1.09262  Validation  RMSE:   1.13135
+   13.7285) Iteration:  59 Training RMSE:   1.09259  Validation  RMSE:   1.13134
+0.1 - Stochastic Gradient Descent (SGD) on test_graph_mmwith K =13
+[matrixmarket] => [true]
+[training] => [test_graph_mm]
+[validation] => [test_graph_mme]
+[D] => [13]
+[max_iter] => [60]
+[ncpus] => [16]
+[minval] => [1]
+[maxval] => [5]
+[quiet] => [1]
+[lambda] => [0.1]
+[feature_width] => [13]
+[users] => [45979]
+[movies] => [11537]
+[training_ratings] => [170045]
+[number_of_threads] => [16]
+[membudget_Mb] => [800]
+  0.254928) Iteration:   0 Training RMSE:   1.41783  Validation  RMSE:   1.32418
+  0.481558) Iteration:   1 Training RMSE:   1.32228  Validation  RMSE:    1.2626
+  0.735977) Iteration:   2 Training RMSE:   1.27059  Validation  RMSE:   1.22877
+  0.965563) Iteration:   3 Training RMSE:   1.23665  Validation  RMSE:   1.20659
+   1.22654) Iteration:   4 Training RMSE:   1.21218  Validation  RMSE:   1.19084
+   1.44863) Iteration:   5 Training RMSE:   1.19353  Validation  RMSE:   1.17908
+    1.7278) Iteration:   6 Training RMSE:   1.17879  Validation  RMSE:   1.16985
+   1.95421) Iteration:   7 Training RMSE:   1.16685  Validation  RMSE:   1.16241
+   2.18882) Iteration:   8 Training RMSE:   1.15698  Validation  RMSE:   1.15635
+   2.42442) Iteration:   9 Training RMSE:   1.14871  Validation  RMSE:   1.15134
+   2.65743) Iteration:  10 Training RMSE:    1.1417  Validation  RMSE:   1.14712
+   2.89858) Iteration:  11 Training RMSE:   1.13572  Validation  RMSE:   1.14361
+   3.16539) Iteration:  12 Training RMSE:   1.13056  Validation  RMSE:   1.14058
+   3.43299) Iteration:  13 Training RMSE:   1.12609  Validation  RMSE:   1.13798
+   3.66818) Iteration:  14 Training RMSE:    1.1222  Validation  RMSE:   1.13576
+   3.90942) Iteration:  15 Training RMSE:    1.1188  Validation  RMSE:    1.1338
+   4.15985) Iteration:  16 Training RMSE:   1.11582  Validation  RMSE:   1.13212
+   4.37345) Iteration:  17 Training RMSE:    1.1132  Validation  RMSE:   1.13063
+   4.62142) Iteration:  18 Training RMSE:   1.11088  Validation  RMSE:   1.12933
+   4.88198) Iteration:  19 Training RMSE:   1.10883  Validation  RMSE:   1.12819
+    5.1443) Iteration:  20 Training RMSE:   1.10701  Validation  RMSE:   1.12719
+   5.36266) Iteration:  21 Training RMSE:    1.1054  Validation  RMSE:   1.12631
+    5.6132) Iteration:  22 Training RMSE:   1.10397  Validation  RMSE:   1.12552
+   5.88866) Iteration:  23 Training RMSE:   1.10269  Validation  RMSE:   1.12481
+   6.12501) Iteration:  24 Training RMSE:   1.10155  Validation  RMSE:   1.12419
+   6.38479) Iteration:  25 Training RMSE:   1.10054  Validation  RMSE:   1.12364
+   6.63346) Iteration:  26 Training RMSE:   1.09963  Validation  RMSE:   1.12315
+   6.87961) Iteration:  27 Training RMSE:   1.09882  Validation  RMSE:   1.12271
+   7.14526) Iteration:  28 Training RMSE:    1.0981  Validation  RMSE:   1.12231
+   7.38047) Iteration:  29 Training RMSE:   1.09745  Validation  RMSE:   1.12196
+   7.64645) Iteration:  30 Training RMSE:   1.09687  Validation  RMSE:   1.12164
+   7.87626) Iteration:  31 Training RMSE:   1.09635  Validation  RMSE:   1.12136
+   8.17993) Iteration:  32 Training RMSE:   1.09588  Validation  RMSE:    1.1211
+   8.46908) Iteration:  33 Training RMSE:   1.09546  Validation  RMSE:   1.12087
+   8.73307) Iteration:  34 Training RMSE:   1.09508  Validation  RMSE:   1.12067
+   8.96936) Iteration:  35 Training RMSE:   1.09475  Validation  RMSE:   1.12049
+   9.19715) Iteration:  36 Training RMSE:   1.09445  Validation  RMSE:   1.12032
+   9.43981) Iteration:  37 Training RMSE:   1.09417  Validation  RMSE:   1.12018
+   9.68933) Iteration:  38 Training RMSE:   1.09393  Validation  RMSE:   1.12004
+   9.93863) Iteration:  39 Training RMSE:   1.09371  Validation  RMSE:   1.11992
+   10.1999) Iteration:  40 Training RMSE:   1.09351  Validation  RMSE:   1.11982
+   10.4588) Iteration:  41 Training RMSE:   1.09334  Validation  RMSE:   1.11972
+   10.7823) Iteration:  42 Training RMSE:   1.09318  Validation  RMSE:   1.11964
+   11.0163) Iteration:  43 Training RMSE:   1.09303  Validation  RMSE:   1.11956
+   11.2617) Iteration:  44 Training RMSE:   1.09291  Validation  RMSE:   1.11949
+   11.5063) Iteration:  45 Training RMSE:   1.09279  Validation  RMSE:   1.11943
+   11.7355) Iteration:  46 Training RMSE:   1.09269  Validation  RMSE:   1.11937
+    12.069) Iteration:  47 Training RMSE:   1.09259  Validation  RMSE:   1.11932
+   12.3755) Iteration:  48 Training RMSE:   1.09251  Validation  RMSE:   1.11928
+    12.648) Iteration:  49 Training RMSE:   1.09243  Validation  RMSE:   1.11923
+   12.8961) Iteration:  50 Training RMSE:   1.09237  Validation  RMSE:    1.1192
+    13.144) Iteration:  51 Training RMSE:    1.0923  Validation  RMSE:   1.11916
+   13.3984) Iteration:  52 Training RMSE:   1.09225  Validation  RMSE:   1.11913
+   13.6564) Iteration:  53 Training RMSE:    1.0922  Validation  RMSE:   1.11911
+   13.8802) Iteration:  54 Training RMSE:   1.09215  Validation  RMSE:   1.11908
+   14.1622) Iteration:  55 Training RMSE:   1.09211  Validation  RMSE:   1.11906
+   14.3885) Iteration:  56 Training RMSE:   1.09208  Validation  RMSE:   1.11904
+    14.657) Iteration:  57 Training RMSE:   1.09205  Validation  RMSE:   1.11903
+   14.8789) Iteration:  58 Training RMSE:   1.09202  Validation  RMSE:   1.11901
+   15.1089) Iteration:  59 Training RMSE:   1.09199  Validation  RMSE:     1.119
+1 - Stochastic Gradient Descent (SGD) on test_graph_mmwith K =13
+[matrixmarket] => [true]
+[training] => [test_graph_mm]
+[validation] => [test_graph_mme]
+[D] => [13]
+[max_iter] => [60]
+[ncpus] => [16]
+[minval] => [-5]
+[maxval] => [5]
+[quiet] => [1]
+[lambda] => [1]
+[feature_width] => [13]
+[users] => [45979]
+[movies] => [11537]
+[training_ratings] => [170045]
+[number_of_threads] => [16]
+[membudget_Mb] => [800]
+  0.241983) Iteration:   0 Training RMSE:   1.40844  Validation  RMSE:   1.33451
+  0.519041) Iteration:   1 Training RMSE:    1.3147  Validation  RMSE:   1.28082
+  0.743714) Iteration:   2 Training RMSE:   1.26396  Validation  RMSE:   1.25138
+  0.977813) Iteration:   3 Training RMSE:   1.23073  Validation  RMSE:   1.23235
+   1.20353) Iteration:   4 Training RMSE:    1.2068  Validation  RMSE:   1.21864
+   1.44663) Iteration:   5 Training RMSE:   1.18857  Validation  RMSE:   1.20809
+   1.69604) Iteration:   6 Training RMSE:   1.17416  Validation  RMSE:   1.19982
+   1.95513) Iteration:   7 Training RMSE:   1.16247  Validation  RMSE:   1.19312
+   2.20966) Iteration:   8 Training RMSE:    1.1528  Validation  RMSE:    1.1876
+   2.43819) Iteration:   9 Training RMSE:    1.1447  Validation  RMSE:   1.18298
+   2.66968) Iteration:  10 Training RMSE:   1.13783  Validation  RMSE:   1.17909
+   2.89552) Iteration:  11 Training RMSE:   1.13195  Validation  RMSE:   1.17571
+   3.07701) Iteration:  12 Training RMSE:    1.1269  Validation  RMSE:   1.17285
+   3.29556) Iteration:  13 Training RMSE:   1.12251  Validation  RMSE:   1.17036
+   3.53731) Iteration:  14 Training RMSE:    1.1187  Validation  RMSE:   1.16821
+   3.74365) Iteration:  15 Training RMSE:   1.11536  Validation  RMSE:   1.16633
+   3.97557) Iteration:  16 Training RMSE:   1.11243  Validation  RMSE:   1.16466
+   4.18495) Iteration:  17 Training RMSE:   1.10985  Validation  RMSE:   1.16319
+   4.43093) Iteration:  18 Training RMSE:   1.10758  Validation  RMSE:    1.1619
+    4.6667) Iteration:  19 Training RMSE:   1.10557  Validation  RMSE:   1.16075
+   4.90688) Iteration:  20 Training RMSE:   1.10378  Validation  RMSE:   1.15974
+   5.16265) Iteration:  21 Training RMSE:    1.1022  Validation  RMSE:   1.15884
+   5.44121) Iteration:  22 Training RMSE:   1.10079  Validation  RMSE:   1.15804
+   5.64487) Iteration:  23 Training RMSE:   1.09954  Validation  RMSE:   1.15733
+   5.87728) Iteration:  24 Training RMSE:   1.09842  Validation  RMSE:   1.15668
+   6.09767) Iteration:  25 Training RMSE:   1.09742  Validation  RMSE:   1.15609
+   6.33563) Iteration:  26 Training RMSE:   1.09653  Validation  RMSE:   1.15557
+   6.58806) Iteration:  27 Training RMSE:   1.09574  Validation  RMSE:    1.1551
+    6.8483) Iteration:  28 Training RMSE:   1.09502  Validation  RMSE:   1.15469
+   7.09386) Iteration:  29 Training RMSE:   1.09439  Validation  RMSE:   1.15432
+   7.31421) Iteration:  30 Training RMSE:   1.09382  Validation  RMSE:   1.15399
+   7.58045) Iteration:  31 Training RMSE:   1.09331  Validation  RMSE:   1.15369
+   7.79788) Iteration:  32 Training RMSE:   1.09285  Validation  RMSE:   1.15342
+   7.98752) Iteration:  33 Training RMSE:   1.09244  Validation  RMSE:   1.15318
+    8.2087) Iteration:  34 Training RMSE:   1.09207  Validation  RMSE:   1.15296
+   8.41597) Iteration:  35 Training RMSE:   1.09174  Validation  RMSE:   1.15277
+   8.61654) Iteration:  36 Training RMSE:   1.09144  Validation  RMSE:   1.15259
+   8.87238) Iteration:  37 Training RMSE:   1.09117  Validation  RMSE:   1.15244
+   9.08826) Iteration:  38 Training RMSE:   1.09093  Validation  RMSE:    1.1523
+   9.34239) Iteration:  39 Training RMSE:   1.09072  Validation  RMSE:   1.15217
+   9.55446) Iteration:  40 Training RMSE:   1.09052  Validation  RMSE:   1.15206
+   9.79132) Iteration:  41 Training RMSE:   1.09035  Validation  RMSE:   1.15196
+   10.0368) Iteration:  42 Training RMSE:   1.09019  Validation  RMSE:   1.15186
+   10.3038) Iteration:  43 Training RMSE:   1.09005  Validation  RMSE:   1.15178
+   10.5235) Iteration:  44 Training RMSE:   1.08993  Validation  RMSE:   1.15171
+   10.7814) Iteration:  45 Training RMSE:   1.08981  Validation  RMSE:   1.15164
+   11.0233) Iteration:  46 Training RMSE:   1.08971  Validation  RMSE:   1.15158
+   11.2419) Iteration:  47 Training RMSE:   1.08962  Validation  RMSE:   1.15153
+   11.4686) Iteration:  48 Training RMSE:   1.08954  Validation  RMSE:   1.15148
+   11.7031) Iteration:  49 Training RMSE:   1.08946  Validation  RMSE:   1.15144
+   11.9277) Iteration:  50 Training RMSE:    1.0894  Validation  RMSE:    1.1514
+   12.1405) Iteration:  51 Training RMSE:   1.08934  Validation  RMSE:   1.15137
+   12.3901) Iteration:  52 Training RMSE:   1.08928  Validation  RMSE:   1.15133
+    12.676) Iteration:  53 Training RMSE:   1.08923  Validation  RMSE:   1.15131
+   12.8899) Iteration:  54 Training RMSE:   1.08919  Validation  RMSE:   1.15128
+   13.1458) Iteration:  55 Training RMSE:   1.08915  Validation  RMSE:   1.15126
+   13.3821) Iteration:  56 Training RMSE:   1.08912  Validation  RMSE:   1.15124
+   13.5955) Iteration:  57 Training RMSE:   1.08908  Validation  RMSE:   1.15122
+   13.8441) Iteration:  58 Training RMSE:   1.08905  Validation  RMSE:    1.1512
+   14.0974) Iteration:  59 Training RMSE:   1.08903  Validation  RMSE:   1.15119
+0.01 - Stochastic Gradient Descent (SGD) on test_graph_mmwith K =5
+[matrixmarket] => [true]
+[training] => [test_graph_mm]
+[validation] => [test_graph_mme]
+[D] => [5]
+[max_iter] => [60]
+[ncpus] => [16]
+[minval] => [1]
+[maxval] => [5]
+[quiet] => [1]
+[lambda] => [0.01]
+[feature_width] => [5]
+[users] => [45979]
+[movies] => [11537]
+[training_ratings] => [170045]
+[number_of_threads] => [16]
+[membudget_Mb] => [800]
+   0.20043) Iteration:   0 Training RMSE:    2.5469  Validation  RMSE:   2.34225
+  0.449868) Iteration:   1 Training RMSE:   2.26937  Validation  RMSE:   2.09764
+    0.7066) Iteration:   2 Training RMSE:   2.08312  Validation  RMSE:   1.94397
+  0.952543) Iteration:   3 Training RMSE:   1.95825  Validation  RMSE:   1.84125
+   1.21397) Iteration:   4 Training RMSE:   1.86963  Validation  RMSE:   1.76803
+   1.46508) Iteration:   5 Training RMSE:   1.80357  Validation  RMSE:   1.71315
+   1.70076) Iteration:   6 Training RMSE:   1.75243  Validation  RMSE:   1.67085
+   1.90431) Iteration:   7 Training RMSE:   1.71168  Validation  RMSE:   1.63754
+   2.14175) Iteration:   8 Training RMSE:   1.67852  Validation  RMSE:   1.61057
+   2.33375) Iteration:   9 Training RMSE:   1.65108  Validation  RMSE:   1.58831
+   2.57255) Iteration:  10 Training RMSE:   1.62806  Validation  RMSE:   1.56986
+   2.80468) Iteration:  11 Training RMSE:   1.60855  Validation  RMSE:   1.55434
+   3.07891) Iteration:  12 Training RMSE:    1.5919  Validation  RMSE:   1.54115
+   3.29366) Iteration:  13 Training RMSE:   1.57757  Validation  RMSE:   1.52986
+   3.50451) Iteration:  14 Training RMSE:   1.56516  Validation  RMSE:   1.52014
+   3.70689) Iteration:  15 Training RMSE:   1.55438  Validation  RMSE:    1.5117
+   3.90759) Iteration:  16 Training RMSE:   1.54495  Validation  RMSE:   1.50433
+   4.11964) Iteration:  17 Training RMSE:   1.53669  Validation  RMSE:   1.49789
+   4.37403) Iteration:  18 Training RMSE:   1.52942  Validation  RMSE:   1.49226
+   4.61542) Iteration:  19 Training RMSE:   1.52302  Validation  RMSE:   1.48732
+   4.85123) Iteration:  20 Training RMSE:   1.51736  Validation  RMSE:   1.48295
+     5.078) Iteration:  21 Training RMSE:   1.51234  Validation  RMSE:   1.47908
+   5.32951) Iteration:  22 Training RMSE:    1.5079  Validation  RMSE:   1.47566
+    5.5362) Iteration:  23 Training RMSE:   1.50394  Validation  RMSE:   1.47262
+   5.78926) Iteration:  24 Training RMSE:   1.50043  Validation  RMSE:   1.46993
+   6.01691) Iteration:  25 Training RMSE:    1.4973  Validation  RMSE:   1.46754
+   6.26283) Iteration:  26 Training RMSE:    1.4945  Validation  RMSE:   1.46541
+   6.46453) Iteration:  27 Training RMSE:   1.49201  Validation  RMSE:    1.4635
+   6.66537) Iteration:  28 Training RMSE:   1.48978  Validation  RMSE:    1.4618
+   6.88077) Iteration:  29 Training RMSE:   1.48779  Validation  RMSE:   1.46029
+   7.13062) Iteration:  30 Training RMSE:   1.48601  Validation  RMSE:   1.45893
+   7.37519) Iteration:  31 Training RMSE:   1.48441  Validation  RMSE:   1.45772
+   7.61972) Iteration:  32 Training RMSE:   1.48298  Validation  RMSE:   1.45663
+   7.83168) Iteration:  33 Training RMSE:    1.4817  Validation  RMSE:   1.45566
+   8.08162) Iteration:  34 Training RMSE:   1.48055  Validation  RMSE:   1.45479
+   8.31311) Iteration:  35 Training RMSE:   1.47952  Validation  RMSE:   1.45401
+   8.50048) Iteration:  36 Training RMSE:    1.4786  Validation  RMSE:   1.45331
+   8.70971) Iteration:  37 Training RMSE:   1.47777  Validation  RMSE:   1.45268
+   8.94998) Iteration:  38 Training RMSE:   1.47702  Validation  RMSE:   1.45211
+   9.15339) Iteration:  39 Training RMSE:   1.47636  Validation  RMSE:   1.45161
+   9.36308) Iteration:  40 Training RMSE:   1.47575  Validation  RMSE:   1.45115
+   9.57216) Iteration:  41 Training RMSE:   1.47521  Validation  RMSE:   1.45074
+   9.78206) Iteration:  42 Training RMSE:   1.47473  Validation  RMSE:   1.45037
+   10.0331) Iteration:  43 Training RMSE:   1.47429  Validation  RMSE:   1.45004
+   10.2946) Iteration:  44 Training RMSE:    1.4739  Validation  RMSE:   1.44974
+   10.5365) Iteration:  45 Training RMSE:   1.47355  Validation  RMSE:   1.44947
+   10.7776) Iteration:  46 Training RMSE:   1.47323  Validation  RMSE:   1.44923
+   11.0157) Iteration:  47 Training RMSE:   1.47295  Validation  RMSE:   1.44902
+   11.2286) Iteration:  48 Training RMSE:   1.47269  Validation  RMSE:   1.44882
+    11.425) Iteration:  49 Training RMSE:   1.47246  Validation  RMSE:   1.44865
+   11.6302) Iteration:  50 Training RMSE:   1.47225  Validation  RMSE:   1.44849
+   11.8392) Iteration:  51 Training RMSE:   1.47207  Validation  RMSE:   1.44835
+   12.0962) Iteration:  52 Training RMSE:    1.4719  Validation  RMSE:   1.44822
+   12.3411) Iteration:  53 Training RMSE:   1.47175  Validation  RMSE:   1.44811
+   12.5306) Iteration:  54 Training RMSE:   1.47161  Validation  RMSE:     1.448
+   12.7327) Iteration:  55 Training RMSE:   1.47149  Validation  RMSE:   1.44791
+   12.9402) Iteration:  56 Training RMSE:   1.47138  Validation  RMSE:   1.44783
+   13.1501) Iteration:  57 Training RMSE:   1.47128  Validation  RMSE:   1.44775
+   13.4057) Iteration:  58 Training RMSE:    1.4712  Validation  RMSE:   1.44768
+   13.6417) Iteration:  59 Training RMSE:   1.47112  Validation  RMSE:   1.44762
+0.1 - Stochastic Gradient Descent (SGD) on test_graph_mmwith K =5
+[matrixmarket] => [true]
+[training] => [test_graph_mm]
+[validation] => [test_graph_mme]
+[D] => [5]
+[max_iter] => [60]
+[ncpus] => [16]
+[minval] => [1]
+[maxval] => [5]
+[quiet] => [1]
+[lambda] => [0.1]
+[feature_width] => [5]
+[users] => [45979]
+[movies] => [11537]
+[training_ratings] => [170045]
+[number_of_threads] => [16]
+[membudget_Mb] => [800]
+  0.200375) Iteration:   0 Training RMSE:   2.56194  Validation  RMSE:   2.29597
+  0.424099) Iteration:   1 Training RMSE:   2.28364  Validation  RMSE:   2.04416
+  0.630206) Iteration:   2 Training RMSE:   2.09402  Validation  RMSE:   1.88736
+  0.834396) Iteration:   3 Training RMSE:   1.96656  Validation  RMSE:    1.7847
+    1.0431) Iteration:   4 Training RMSE:   1.87615  Validation  RMSE:   1.71344
+   1.21056) Iteration:   5 Training RMSE:    1.8088  Validation  RMSE:   1.66102
+   1.45121) Iteration:   6 Training RMSE:   1.75669  Validation  RMSE:   1.62054
+   1.70463) Iteration:   7 Training RMSE:   1.71525  Validation  RMSE:   1.58839
+   1.95902) Iteration:   8 Training RMSE:   1.68157  Validation  RMSE:   1.56254
+   2.21158) Iteration:   9 Training RMSE:   1.65373  Validation  RMSE:    1.5413
+   2.46508) Iteration:  10 Training RMSE:   1.63043  Validation  RMSE:   1.52365
+   2.67345) Iteration:  11 Training RMSE:    1.6107  Validation  RMSE:   1.50886
+   2.92084) Iteration:  12 Training RMSE:   1.59386  Validation  RMSE:    1.4963
+   3.14791) Iteration:  13 Training RMSE:   1.57938  Validation  RMSE:   1.48556
+   3.34266) Iteration:  14 Training RMSE:   1.56685  Validation  RMSE:   1.47631
+   3.54713) Iteration:  15 Training RMSE:   1.55596  Validation  RMSE:   1.46828
+   3.76166) Iteration:  16 Training RMSE:   1.54645  Validation  RMSE:   1.46126
+   4.00891) Iteration:  17 Training RMSE:   1.53812  Validation  RMSE:    1.4551
+   4.26408) Iteration:  18 Training RMSE:   1.53079  Validation  RMSE:    1.4497
+   4.50848) Iteration:  19 Training RMSE:   1.52433  Validation  RMSE:   1.44494
+   4.71868) Iteration:  20 Training RMSE:   1.51863  Validation  RMSE:   1.44077
+   4.96593) Iteration:  21 Training RMSE:   1.51357  Validation  RMSE:   1.43707
+   5.21582) Iteration:  22 Training RMSE:   1.50909  Validation  RMSE:    1.4338
+    5.4832) Iteration:  23 Training RMSE:   1.50511  Validation  RMSE:   1.43088
+   5.72364) Iteration:  24 Training RMSE:   1.50156  Validation  RMSE:   1.42829
+   5.94739) Iteration:  25 Training RMSE:   1.49841  Validation  RMSE:   1.42598
+   6.14885) Iteration:  26 Training RMSE:   1.49559  Validation  RMSE:   1.42393
+   6.35732) Iteration:  27 Training RMSE:   1.49308  Validation  RMSE:   1.42211
+   6.61263) Iteration:  28 Training RMSE:   1.49084  Validation  RMSE:   1.42048
+   6.86508) Iteration:  29 Training RMSE:   1.48883  Validation  RMSE:   1.41902
+   7.06842) Iteration:  30 Training RMSE:   1.48703  Validation  RMSE:   1.41772
+   7.30302) Iteration:  31 Training RMSE:   1.48543  Validation  RMSE:   1.41655
+   7.50677) Iteration:  32 Training RMSE:   1.48399  Validation  RMSE:   1.41551
+   7.71682) Iteration:  33 Training RMSE:    1.4827  Validation  RMSE:   1.41458
+   7.97631) Iteration:  34 Training RMSE:   1.48154  Validation  RMSE:   1.41374
+   8.17627) Iteration:  35 Training RMSE:    1.4805  Validation  RMSE:   1.41298
+   8.43324) Iteration:  36 Training RMSE:   1.47957  Validation  RMSE:   1.41231
+   8.65266) Iteration:  37 Training RMSE:   1.47874  Validation  RMSE:    1.4117
+   8.85036) Iteration:  38 Training RMSE:   1.47798  Validation  RMSE:   1.41116
+   9.05676) Iteration:  39 Training RMSE:   1.47731  Validation  RMSE:   1.41067
+   9.29083) Iteration:  40 Training RMSE:   1.47671  Validation  RMSE:   1.41024
+   9.51847) Iteration:  41 Training RMSE:   1.47616  Validation  RMSE:   1.40984
+    9.7678) Iteration:  42 Training RMSE:   1.47567  Validation  RMSE:   1.40949
+   10.0293) Iteration:  43 Training RMSE:   1.47523  Validation  RMSE:   1.40917
+   10.2818) Iteration:  44 Training RMSE:   1.47484  Validation  RMSE:   1.40889
+   10.5305) Iteration:  45 Training RMSE:   1.47449  Validation  RMSE:   1.40863
+   10.7743) Iteration:  46 Training RMSE:   1.47417  Validation  RMSE:    1.4084
+   11.0363) Iteration:  47 Training RMSE:   1.47388  Validation  RMSE:    1.4082
+   11.2652) Iteration:  48 Training RMSE:   1.47362  Validation  RMSE:   1.40801
+   11.4955) Iteration:  49 Training RMSE:   1.47339  Validation  RMSE:   1.40784
+   11.7165) Iteration:  50 Training RMSE:   1.47318  Validation  RMSE:   1.40769
+   11.9244) Iteration:  51 Training RMSE:   1.47299  Validation  RMSE:   1.40756
+   12.1367) Iteration:  52 Training RMSE:   1.47282  Validation  RMSE:   1.40743
+   12.3678) Iteration:  53 Training RMSE:   1.47267  Validation  RMSE:   1.40733
+   12.5911) Iteration:  54 Training RMSE:   1.47254  Validation  RMSE:   1.40723
+   12.8297) Iteration:  55 Training RMSE:   1.47241  Validation  RMSE:   1.40714
+   13.1016) Iteration:  56 Training RMSE:    1.4723  Validation  RMSE:   1.40706
+   13.3384) Iteration:  57 Training RMSE:    1.4722  Validation  RMSE:   1.40699
+   13.5963) Iteration:  58 Training RMSE:   1.47211  Validation  RMSE:   1.40692
+   13.8183) Iteration:  59 Training RMSE:   1.47203  Validation  RMSE:   1.40686
+1 - Stochastic Gradient Descent (SGD) on test_graph_mmwith K =5
+[matrixmarket] => [true]
+[training] => [test_graph_mm]
+[validation] => [test_graph_mme]
+[D] => [5]
+[max_iter] => [60]
+[ncpus] => [16]
+[minval] => [-5]
+[maxval] => [5]
+[quiet] => [1]
+[lambda] => [1]
+[feature_width] => [5]
+[users] => [45979]
+[movies] => [11537]
+[training_ratings] => [170045]
+[number_of_threads] => [16]
+[membudget_Mb] => [800]
+  0.235263) Iteration:   0 Training RMSE:   2.61207  Validation  RMSE:   2.32784
+  0.444711) Iteration:   1 Training RMSE:   2.30001  Validation  RMSE:   2.06127
+  0.689049) Iteration:   2 Training RMSE:    2.1025  Validation  RMSE:   1.90091
+  0.899567) Iteration:   3 Training RMSE:   1.97208  Validation  RMSE:   1.79737
+   1.14625) Iteration:   4 Training RMSE:   1.88009  Validation  RMSE:   1.72506
+   1.31919) Iteration:   5 Training RMSE:    1.8117  Validation  RMSE:   1.67205
+   1.56734) Iteration:   6 Training RMSE:   1.75884  Validation  RMSE:   1.63097
+   1.81674) Iteration:   7 Training RMSE:    1.7168  Validation  RMSE:    1.5984
+   2.02379) Iteration:   8 Training RMSE:   1.68265  Validation  RMSE:   1.57225
+   2.26272) Iteration:   9 Training RMSE:   1.65444  Validation  RMSE:   1.55085
+   2.51105) Iteration:  10 Training RMSE:   1.63081  Validation  RMSE:   1.53305
+   2.72259) Iteration:  11 Training RMSE:   1.61081  Validation  RMSE:   1.51806
+   2.92385) Iteration:  12 Training RMSE:   1.59374  Validation  RMSE:   1.50531
+   3.18112) Iteration:  13 Training RMSE:   1.57907  Validation  RMSE:   1.49443
+   3.40154) Iteration:  14 Training RMSE:   1.56639  Validation  RMSE:   1.48508
+   3.60104) Iteration:  15 Training RMSE:   1.55536  Validation  RMSE:     1.477
+   3.79523) Iteration:  16 Training RMSE:   1.54574  Validation  RMSE:   1.46995
+   3.99493) Iteration:  17 Training RMSE:   1.53731  Validation  RMSE:   1.46373
+   4.21826) Iteration:  18 Training RMSE:    1.5299  Validation  RMSE:   1.45827
+   4.46057) Iteration:  19 Training RMSE:   1.52337  Validation  RMSE:   1.45348
+   4.72149) Iteration:  20 Training RMSE:    1.5176  Validation  RMSE:   1.44925
+   4.97301) Iteration:  21 Training RMSE:    1.5125  Validation  RMSE:   1.44551
+   5.21722) Iteration:  22 Training RMSE:   1.50797  Validation  RMSE:   1.44221
+   5.47575) Iteration:  23 Training RMSE:   1.50395  Validation  RMSE:   1.43928
+   5.74068) Iteration:  24 Training RMSE:   1.50037  Validation  RMSE:   1.43668
+   5.95327) Iteration:  25 Training RMSE:   1.49719  Validation  RMSE:   1.43437
+   6.18539) Iteration:  26 Training RMSE:   1.49435  Validation  RMSE:   1.43231
+    6.4329) Iteration:  27 Training RMSE:   1.49181  Validation  RMSE:   1.43047
+   6.69288) Iteration:  28 Training RMSE:   1.48955  Validation  RMSE:   1.42883
+    6.9014) Iteration:  29 Training RMSE:   1.48752  Validation  RMSE:   1.42738
+   7.10941) Iteration:  30 Training RMSE:   1.48571  Validation  RMSE:   1.42607
+   7.35559) Iteration:  31 Training RMSE:   1.48409  Validation  RMSE:    1.4249
+    7.5674) Iteration:  32 Training RMSE:   1.48264  Validation  RMSE:   1.42385
+   7.81327) Iteration:  33 Training RMSE:   1.48134  Validation  RMSE:   1.42291
+   8.03749) Iteration:  34 Training RMSE:   1.48017  Validation  RMSE:   1.42207
+   8.26646) Iteration:  35 Training RMSE:   1.47912  Validation  RMSE:   1.42132
+   8.48051) Iteration:  36 Training RMSE:   1.47818  Validation  RMSE:   1.42065
+   8.74407) Iteration:  37 Training RMSE:   1.47734  Validation  RMSE:   1.42004
+    8.9789) Iteration:  38 Training RMSE:   1.47659  Validation  RMSE:    1.4195
+   9.22989) Iteration:  39 Training RMSE:   1.47591  Validation  RMSE:   1.41901
+   9.48889) Iteration:  40 Training RMSE:    1.4753  Validation  RMSE:   1.41857
+   9.70821) Iteration:  41 Training RMSE:   1.47475  Validation  RMSE:   1.41818
+      9.95) Iteration:  42 Training RMSE:   1.47426  Validation  RMSE:   1.41783
+   10.1605) Iteration:  43 Training RMSE:   1.47381  Validation  RMSE:   1.41751
+   10.3667) Iteration:  44 Training RMSE:   1.47342  Validation  RMSE:   1.41722
+   10.5739) Iteration:  45 Training RMSE:   1.47306  Validation  RMSE:   1.41697
+   10.7618) Iteration:  46 Training RMSE:   1.47274  Validation  RMSE:   1.41674
+   10.9799) Iteration:  47 Training RMSE:   1.47245  Validation  RMSE:   1.41653
+   11.2037) Iteration:  48 Training RMSE:   1.47219  Validation  RMSE:   1.41635
+    11.437) Iteration:  49 Training RMSE:   1.47196  Validation  RMSE:   1.41618
+   11.6665) Iteration:  50 Training RMSE:   1.47175  Validation  RMSE:   1.41603
+    11.922) Iteration:  51 Training RMSE:   1.47156  Validation  RMSE:   1.41589
+   12.1288) Iteration:  52 Training RMSE:   1.47139  Validation  RMSE:   1.41577
+    12.318) Iteration:  53 Training RMSE:   1.47123  Validation  RMSE:   1.41566
+   12.6032) Iteration:  54 Training RMSE:    1.4711  Validation  RMSE:   1.41556
+   12.8205) Iteration:  55 Training RMSE:   1.47097  Validation  RMSE:   1.41547
+   13.0821) Iteration:  56 Training RMSE:   1.47086  Validation  RMSE:   1.41539
+   13.3272) Iteration:  57 Training RMSE:   1.47076  Validation  RMSE:   1.41532
+   13.5843) Iteration:  58 Training RMSE:   1.47067  Validation  RMSE:   1.41526
+   13.8001) Iteration:  59 Training RMSE:   1.47059  Validation  RMSE:    1.4152

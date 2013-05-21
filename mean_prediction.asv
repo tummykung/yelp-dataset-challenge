@@ -1,0 +1,17 @@
+
+% find user average
+nusers = 46000;
+total = zeros(nusers, 1);
+count = zeros(nusers, 1);
+user_avg = zeros(nusers, 1);
+% 
+% for i = 1:nusers
+%     i
+%     user_avg(i) = mean(data(data(:, 1) == i, 3));
+% end
+
+for i = 1:nusers
+    row = 
+    total()
+    user_avg(i) = mean(data(data(:, 1) == i, 3));
+end
